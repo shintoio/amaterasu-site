@@ -60,11 +60,15 @@ section {
 }
 
 aside {
-    padding: 50px 0;
+    padding: 75px 0;
 }
 
 .no-padding {
     padding: 0;
+}
+
+.no-padding-bottom{
+    padding-bottom: 0px;
 }
 
 // Navigation
@@ -109,7 +113,8 @@ aside {
         }
     }
     @media (min-width: 768px) {
-        background-color: transparent;
+        background-color: #241E22;
+        /*background-color: #1F181A;*/
         border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
             color: rgba(white, .7);
@@ -155,7 +160,9 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    /*background-color: #241E22;*/
+    background-color: #1F181A;
+    /*background-image: url('../img/header.jpg');*/
     text-align: center;
     color: white;
     .header-content {
@@ -170,14 +177,19 @@ header {
                 margin-top: 0;
                 margin-bottom: 0;
             }
+            img{
+                width:30%;
+                /*60% for big logo*/
+            }
             hr {
-                margin: 30px auto;
+                margin: 25px auto;
             }
             p {
                 font-weight: 300;
                 color: rgba(white, .7);
-                font-size: 16px;
                 margin-bottom: 50px;
+                font-family: sans-serif;
+                font-size: 20px;
             }
         }
     }
@@ -194,8 +206,9 @@ header {
                 max-width: 1000px;
                 margin-left: auto;
                 margin-right: auto;
+                margin-top: 5%;
                 p {
-                    font-size: 18px;
+                    font-size: 20px;
                     max-width: 80%;
                     margin-left: auto;
                     margin-right: auto;
@@ -209,6 +222,7 @@ header {
 
 .section-heading {
     margin-top: 0;
+    margin-bottom: 40px;
 }
 
 .service-box {
@@ -280,7 +294,7 @@ header {
 
 .call-to-action {
     h2 {
-        margin: 0 auto 20px;
+        margin: 0 auto 43px;
     }
 }
 
@@ -320,6 +334,42 @@ header {
     color: $theme-dark;
     font-size: 4em;
 }
+@media (min-width: 1200px){
+
+    #contact .col-lg-offset-3 {
+        margin-left: 23%;
+    }
+
+    #contact .col-lg-4 {
+        width: 24.333333%;
+    }
+
+    #contact .col-lg-offset-1 {
+        margin-left: 5.333333%;
+    }
+
+    #contact  .col-lg-2 {
+        width: 24.666667%;
+    }
+    #contact .col-lg-offset-media{
+        margin-left: 22%;
+    }
+
+}
+
+//samples
+.thin-border{
+    border: solid 1px #d6cccc;    
+}
+#samples{
+    padding: 76px 0 0 0;
+}
+
+//about
+#about p{
+    font-size: 20px;
+}
+
 
 // Extras
 // -- Highlight Color Customization
